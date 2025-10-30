@@ -1,0 +1,120 @@
+body {
+    background: #e7e8ec;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background: #282c35;
+    color: #62a4ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 30px;
+}
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 6px 12px;
+}
+.nav-links li a:hover {
+    border-bottom: 2px solid #62a4ff;
+}
+.container {
+    display: flex;
+    min-height: 80vh;
+}
+.sidebar {
+    background: #22304a;
+    color: #ffffff;
+    min-width: 210px;
+    padding: 28px 16px;
+    border-radius: 8px;
+    margin: 30px 0px 0px 40px;
+}
+.sidebar h2 {
+    font-size: 19px;
+    margin-bottom: 16px;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin-bottom: 17px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.sidebar ul li:hover {
+    background: #313e64;
+    border-radius: 4px;
+}
+
+.main-content {
+    flex-grow: 1;
+    margin: 36px 44px;
+}
+.main-content h1 {
+    font-size: 28px;
+    margin-bottom: 14px;
+}
+.card-container {
+    display: flex;
+    gap: 22px;
+    margin-top: 32px;
+}
+.card {
+    background: linear-gradient(120deg, #55b5ff, #27446b);
+    color: #fff;
+    padding: 28px 18px;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(60,60,60,0.07);
+    min-width: 200px;
+    max-width: 240px;
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: translateY(-4px) scale(1.04);
+}
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+.card p {
+    font-size: 15px;
+    margin-bottom: 14px;
+}
+.card button {
+    background: #fff;
+    color: #276aaa;
+    border: none;
+    padding: 7px 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.card button:hover {
+    background: #ddeafd;
+}
+.footer {
+    background: #232734;
+    color: #9ba5be;
+    text-align: center;
+    padding: 19px 0 10px 0;
+    font-size: 15px;
+    position: relative;
+    margin-top: 35px;
+}
+.footer-icons span {
+    margin: 0 10px;
+    font-size: 19px;
+}
