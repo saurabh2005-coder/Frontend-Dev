@@ -1,0 +1,33 @@
+
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Box-Sizing Comparison</title>
+<link rel="stylesheet" href="../css/shared.css">
+<style>
+.compare { display:flex; gap:18px; align-items:flex-start; justify-content:center; }
+.box { width:300px; padding:24px; border:6px solid rgba(59,130,246,0.18); border-radius:8px; text-align:center; }
+.default { box-sizing: content-box; background:#fff8f0; }
+.borderbox { box-sizing: border-box; background:#f0fdf4; }
+.note { margin-top:12px; color:#374151; }
+@media (max-width:700px) { .compare { flex-direction:column; } }
+</style>
+</head><body>
+<div class="container">
+<header><h1>Box-Sizing Comparison</h1></header>
+
+<div class="compare">
+  <div class="box default">
+    <strong>content-box (default)</strong>
+    <p class="note">Padding and border are added outside the specified width.</p>
+    <p><small>Specified width: 300px; padding:24px; border:6px</small></p>
+  </div>
+
+  <div class="box borderbox">
+    <strong>border-box</strong>
+    <p class="note">Padding and border are included inside the specified width.</p>
+    <p><small>Specified width: 300px; padding:24px; border:6px</small></p>
+  </div>
+</div>
+
+<footer style="margin-top:14px;">Notice that the border-box version keeps total width at 300px while the default grows due to padding/border.</footer>
+</div>
+</body></html>

@@ -1,0 +1,57 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Pseudo-Classes Demo</title>
+<link rel="stylesheet" href="../css/shared.css">
+<style>
+.demo-row { display:flex; gap:24px; align-items:flex-start; justify-content:space-between; }
+.card { padding:18px; border-radius:10px; flex:1; min-width:200px; background:#fff; }
+a.example { color:#2563eb; text-decoration:none; }
+a.example:hover { color:#1d4ed8; text-decoration:underline; transform:translateY(-2px); transition:all 0.18s ease; }
+button.example { background:#10b981; color:white; border:none; padding:8px 12px; border-radius:8px; cursor:pointer; }
+button.example:focus { outline:3px solid rgba(16,185,129,0.28); }
+button.example:active { transform:translateY(1px) scale(0.98); }
+ul.examples { list-style:none; padding:0; }
+ul.examples li:nth-child(odd) { background:linear-gradient(90deg,#f8fafc,#ffffff); }
+ul.examples li:nth-child(even) { background:linear-gradient(90deg,#fff,#f7fff7); }
+ul.examples li { padding:10px; border-radius:6px; margin:6px 0; transition:background 0.2s; }
+ul.examples li:hover { background:#eef2ff; }
+</style>
+</head>
+<body>
+<div class="container">
+<header><h1>Pseudo-Classes Examples</h1><small class="note">Hover, Focus, Active, and :nth-child() on links, buttons, and list items.</small></header>
+
+<div class="demo-row">
+  <div class="card">
+    <h2>Links — <code>:hover</code></h2>
+    <p>Move the pointer over the link to see <code>:hover</code> state.</p>
+    <a class="example" href="#">Example Link (hover me)</a>
+  </div>
+
+  <div class="card">
+    <h2>Buttons — <code>:focus</code> &amp; <code>:active</code></h2>
+    <p>Tab to the button to see <code>:focus</code>, click and hold for <code>:active</code>.</p>
+    <button class="example">Primary Action</button>
+  </div>
+
+  <div class="card">
+    <h2>List Items — <code>:nth-child()</code></h2>
+    <p>Alternating backgrounds are applied with <code>:nth-child()</code>.</p>
+    <ul class="examples">
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+      <li>List item 4</li>
+    </ul>
+  </div>
+</div>
+
+<footer style="margin-top:20px;">Short explanations: <br>
+<small><strong>:hover</strong> — when mouse is over an element. <strong>:focus</strong> — element has keyboard focus. <strong>:active</strong> — during a mouse press. <strong>:nth-child()</strong> — targets based on position among siblings.</small></footer>
+</div>
+</body>
+</html>

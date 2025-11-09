@@ -1,0 +1,69 @@
+
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>CSS Selectors Practice</title>
+<link rel="stylesheet" href="../css/shared.css">
+<style>
+/* element selector */
+p { line-height:1.6; }
+
+/* class selector */
+.highlight { background: linear-gradient(90deg,#fff7ed,#fff); padding:6px; border-radius:6px; }
+
+/* ID selector */
+#main-title { font-size:22px; margin-bottom:6px; }
+
+/* attribute selector: targets links with data-role */
+a[data-role="external"]::after { content: " ↗"; font-size:12px; }
+
+/* combinators */
+.container > ul > li { margin:8px 0; padding:8px; border-radius:6px; }
+.container .nested p { margin:6px 0; color:#334155; }
+
+/* adjacent sibling (+) */
+h3 + p { font-style:italic; color:#475569; }
+
+/* general sibling (~) */
+label ~ input { margin-left:6px; }
+
+</style>
+</head>
+<body>
+<div class="container">
+<header><h1 id="main-title">Selectors Practice</h1></header>
+
+<main>
+<section class="container">
+  <h2>Element, Class, and ID</h2>
+  <p>This is a paragraph demonstrating the <code>p</code> element selector.</p>
+  <p class="highlight">This paragraph uses a <code>.highlight</code> class.</p>
+
+  <h2>Attribute selector</h2>
+  <p>External link example: <a href="#" data-role="external">Visit Site</a></p>
+
+  <h2>Combinators</h2>
+  <ul>
+    <li>Item one</li>
+    <li>Item two</li>
+  </ul>
+
+  <div class="nested">
+    <h3>Nested heading</h3>
+    <p>Paragraph inside a nested container — demonstrates descendant selector.</p>
+  </div>
+
+  <h3>Sibling example</h3>
+  <p>Adjancent sibling styled with <code>h3 + p</code>.</p>
+
+  <form>
+    <label for="agree">Agree?</label>
+    <input id="agree" type="checkbox" />
+    <label for="name">Name</label> <input type="text" placeholder="Your name"/>
+  </form>
+</section>
+</main>
+
+<footer style="margin-top:18px;">Comments in CSS describe each rule's purpose.</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>UI Components</title>
+<link rel="stylesheet" href="../css/shared.css">
+<style>
+.card { max-width:700px; margin:20px auto; padding:18px; border-radius:12px; background:linear-gradient(180deg,#ffffff,#f8fafc); box-shadow:0 12px 30px rgba(2,6,23,0.06); }
+.search { display:flex; gap:8px; }
+.search input { flex:1; padding:10px 12px; border-radius:8px; border:1px solid #e6eef8; }
+.search button { padding:10px 12px; border-radius:8px; border:none; background:#2563eb; color:#fff; cursor:pointer; }
+select { padding:10px; border-radius:8px; border:1px solid #e6eef8; }
+.search input:focus, select:focus, button:focus { outline:3px solid rgba(37,99,235,0.14); }
+</style>
+</head><body>
+<div class="container">
+<header><h1>UI Components</h1></header>
+
+<div class="card">
+  <div class="search">
+    <input type="search" placeholder="Search..." aria-label="Search" />
+    <button>Search</button>
+  </div>
+
+  <div style="display:flex; gap:12px; align-items:center; margin-top:14px;">
+    <button class="btn">Primary</button>
+    <button class="btn" style="background:#94a3b8;color:white;">Secondary</button>
+    <select aria-label="Options">
+      <option>Option 1</option><option>Option 2</option>
+    </select>
+  </div>
+
+  <p style="margin-top:14px;">This compact UI is aligned inside a card and uses consistent padding, border-radius, and shadows. Focus and hover highlight states are visible.</p>
+</div>
+
+</div>
+</body></html>

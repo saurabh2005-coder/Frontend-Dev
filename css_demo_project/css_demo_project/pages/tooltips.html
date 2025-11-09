@@ -1,0 +1,62 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Tooltip Demo</title>
+<link rel="stylesheet" href="../css/shared.css">
+<style>
+.center { min-height:60vh; }
+.tooltip-row { display:flex; gap:32px; align-items:center; justify-content:center; flex-wrap:wrap; }
+.tip { position:relative; padding:10px 14px; cursor:default; border-radius:8px; background:#111827; color:white; }
+.tip[data-tip]::after {
+  content: attr(data-tip);
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%) translateY(8px);
+  bottom:100%;
+  opacity:0;
+  pointer-events:none;
+  background:#0f172a;
+  color:#fff;
+  padding:8px 10px;
+  border-radius:8px;
+  white-space:nowrap;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  box-shadow: 0 8px 20px rgba(2,6,23,0.4);
+}
+.tip:hover[data-tip]::after, .tip:focus[data-tip]::after {
+  opacity:1;
+  transform:translateX(-50%) translateY(0);
+}
+/* small arrow */
+.tip[data-tip]::before {
+  content: "";
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  bottom:calc(100% - 8px);
+  border:8px solid transparent;
+  border-top-color: #0f172a;
+  opacity:0;
+  transition: opacity 0.3s ease-in-out;
+}
+.tip:hover[data-tip]::before { opacity:1; }
+</style>
+</head>
+<body>
+<div class="container center">
+<header><h1>CSS-Only Tooltips</h1><small class="note">Hover items below to see tooltips built with absolute positioning and opacity transitions (0.3s).</small></header>
+
+<div class="tooltip-row">
+  <div class="tip" tabindex="0" data-tip="This is an info tooltip">ℹ️ Info</div>
+  <div class="tip" tabindex="0" data-tip="Search for items">🔍 Search</div>
+  <div class="tip" tabindex="0" data-tip="Settings and preferences">⚙️ Settings</div>
+  <div class="tip" tabindex="0" data-tip="Short help text">❓ Help</div>
+</div>
+
+<footer style="margin-top:20px;">Tooltips are positioned above the hovered element and fade in using <code>transition: 0.3s ease-in-out</code>.</footer>
+</div>
+</body>
+</html>

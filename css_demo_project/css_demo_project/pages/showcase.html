@@ -1,0 +1,48 @@
+
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Image Showcase</title>
+<link rel="stylesheet" href="../css/shared.css">
+<style>
+.gallery { display:grid; grid-template-columns: repeat(3,1fr); gap:16px; }
+figure { margin:0; position:relative; overflow:hidden; border-radius:12px; box-shadow:0 10px 30px rgba(2,6,23,0.12); }
+figure img { display:block; width:100%; height:220px; object-fit:cover; transition: transform 0.28s ease, filter 0.28s ease; }
+figure:hover img { transform:scale(1.1); filter:brightness(0.7); }
+.overlay { position:absolute; inset:0; background:rgba(0,0,0,0); transition: background 0.28s ease; }
+figure:hover .overlay { background: rgba(0,0,0,0.18); }
+figcaption { padding:10px 12px; background:white; font-weight:600; text-align:center; }
+@media (max-width:700px) {
+  .gallery { grid-template-columns: 1fr; }
+  figure img { height:360px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header><h1>Image Showcase</h1><small class="note">Hover images to scale and darken with overlay. Responsive: stacks under 700px.</small></header>
+
+<div class="gallery">
+  <figure>
+    <img src="../images/img1.svg" alt="1"><div class="overlay"></div><figcaption>Caption 1</figcaption>
+  </figure>
+  <figure>
+    <img src="../images/img2.svg" alt="2"><div class="overlay"></div><figcaption>Caption 2</figcaption>
+  </figure>
+  <figure>
+    <img src="../images/img3.svg" alt="3"><div class="overlay"></div><figcaption>Caption 3</figcaption>
+  </figure>
+  <figure>
+    <img src="../images/img4.svg" alt="4"><div class="overlay"></div><figcaption>Caption 4</figcaption>
+  </figure>
+  <figure>
+    <img src="../images/img5.svg" alt="5"><div class="overlay"></div><figcaption>Caption 5</figcaption>
+  </figure>
+  <figure>
+    <img src="../images/img6.svg" alt="6"><div class="overlay"></div><figcaption>Caption 6</figcaption>
+  </figure>
+</div>
+
+<footer style="margin-top:20px;">Rounded corners, box-shadow, captions below each image.</footer>
+</div>
+</body>
+</html>
