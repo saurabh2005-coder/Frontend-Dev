@@ -1,0 +1,38 @@
+{
+  "login": [
+    {
+      "username": "user1",
+      "password": "pass1",
+      "id": "b33c"
+    },
+    {
+      "id": "1148",
+      "username": "test",
+      "email": "test@example.com",
+      "password": "Test@123"
+    },
+    {
+      "id": "2f96",
+      "username": "saurabh14821",
+      "email": "saurabh14821@gmail.com",
+      "password": "Saurabh@123"
+    }
+  ],
+  "signUp": [
+    {
+      "username": "newuser1",
+      "password": "newpass1",
+      "email": "newuser1@example.com",
+      "id": "2f2a"
+    },
+    {
+      "id": "1b94",
+      "name": "Saurabh Kumar",
+      "email": "saurabh14821@gmail.com",
+      "phone": "7007478963",
+      "gender": "male",
+      "country": "India",
+      "password": "Saur@123"
+    }
+  ]
+}
