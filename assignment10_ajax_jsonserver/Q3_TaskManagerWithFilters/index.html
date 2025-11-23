@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Q3 - Task Manager With Filters</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Task Manager With Filters</h1>
+  <p>JSON Server endpoint: <code>http://localhost:3003/tasks</code></p>
+
+  <label for="filterSelect">Filter:</label>
+  <select id="filterSelect">
+    <option value="all">All</option>
+    <option value="Low">Low Priority</option>
+    <option value="Medium">Medium Priority</option>
+    <option value="High">High Priority</option>
+    <option value="Completed">Completed</option>
+  </select>
+
+  <ul id="taskList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>

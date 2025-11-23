@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Q6 - User Registration With Duplicate Check</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <h1>User Registration</h1>
+  <p>JSON Server endpoint: <code>http://localhost:3006/users</code></p>
+
+  <form id="registerForm">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" required />
+    </div>
+    <button type="submit">Register</button>
+  </form>
+
+  <p id="statusMsg"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>

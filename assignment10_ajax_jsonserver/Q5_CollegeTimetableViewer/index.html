@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Q5 - College Timetable Viewer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>College Timetable Viewer</h1>
+  <p>JSON Server endpoint: <code>http://localhost:3005/timetable?day=Monday</code></p>
+
+  <label for="daySelect">Select Day: </label>
+  <select id="daySelect">
+    <option value="Monday">Monday</option>
+    <option value="Tuesday">Tuesday</option>
+    <option value="Wednesday">Wednesday</option>
+    <option value="Thursday">Thursday</option>
+    <option value="Friday">Friday</option>
+    <option value="Saturday">Saturday</option>
+  </select>
+
+  <div id="timetableContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

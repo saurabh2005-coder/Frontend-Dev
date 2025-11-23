@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Mouse",
+      "price": 599,
+      "image": "https://via.placeholder.com/80?text=Mouse"
+    },
+    {
+      "id": 2,
+      "name": "Mechanical Keyboard",
+      "price": 2399,
+      "image": "https://via.placeholder.com/80?text=Keyboard"
+    },
+    {
+      "id": 3,
+      "name": "Gaming Laptop",
+      "price": 57999,
+      "image": "https://via.placeholder.com/80?text=Laptop"
+    },
+    {
+      "id": 4,
+      "name": "USB-C Cable",
+      "price": 299,
+      "image": "https://via.placeholder.com/80?text=Cable"
+    },
+    {
+      "id": 5,
+      "name": "Bluetooth Speaker",
+      "price": 1499,
+      "image": "https://via.placeholder.com/80?text=Speaker"
+    }
+  ]
+}

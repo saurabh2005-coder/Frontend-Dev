@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Q4 - Multi-API Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Multi-API Dashboard</h1>
+  <p>JSON Server endpoints:</p>
+  <ul>
+    <li><code>http://localhost:3004/users</code></li>
+    <li><code>http://localhost:3004/orders</code></li>
+    <li><code>http://localhost:3004/products</code></li>
+  </ul>
+
+  <div id="warning" class="warning hidden">Some data could not be loaded.</div>
+
+  <div class="cards">
+    <div class="card" id="usersCard">
+      <h2>Total Users</h2>
+      <div class="value skeleton" id="usersCount">Loading...</div>
+    </div>
+    <div class="card" id="ordersCard">
+      <h2>Total Orders</h2>
+      <div class="value skeleton" id="ordersCount">Loading...</div>
+    </div>
+    <div class="card" id="productsCard">
+      <h2>Total Products</h2>
+      <div class="value skeleton" id="productsCount">Loading...</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

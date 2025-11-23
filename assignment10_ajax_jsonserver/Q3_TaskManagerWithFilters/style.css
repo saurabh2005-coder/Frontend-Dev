@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+#filterSelect {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+#taskList {
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
